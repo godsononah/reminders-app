@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Welcome />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +21,14 @@ function App() {
       </header>
     </div>
   );
+}
+
+function Welcome() {
+  return (
+    <div>
+      <h2>Welcome Jason</h2>
+    </div>
+    );
 }
 
 export default App;
