@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Greeting from "./Greeting";
+import NameInput from "./NameInput";
 
 export default function Welcome() {
     const [personName, setPersonName] = useState('Jason');
@@ -10,7 +11,7 @@ export default function Welcome() {
 
     return (
       <div>
-        <input type="text" onChange={setName} />
+        <NameInput changeHandler={setName} />
         <br />
         <Greeting personName={personName} />
       </div>
