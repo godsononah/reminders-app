@@ -12,7 +12,6 @@ export default function Welcome() {
     return (
       <div>
         <NameInput changeHandler={setName} />
-        <br />
         <Greeting personName={personName} />
       </div>
       );
