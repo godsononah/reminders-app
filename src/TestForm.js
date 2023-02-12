@@ -1,16 +1,17 @@
 import { useState } from "react";
+import TestFormInput from "./TestFormInput";
 
 function TestForm(props) {
-    const [email, setEmail] = useState('');
+    const [emailAddress, setEmailAddress] = useState('');
     const handleEmailChange = (e) => {
-        setEmail(e.target.value);
+        setEmailAddress(e.target.value);
     }
 
     return (
         <form>
-            <input onChange={handleEmailChange} value={email} type="text" name="emailAddress" />
+            <TestFormInput handleEmailChange={handleEmailChange} emailAddress={emailAddress} />
             <button>Sign up for our newsletter</button>
-            <p>{email}</p>
+            <p>My email address: {emailAddress}</p>
         </form>
     )
 }
