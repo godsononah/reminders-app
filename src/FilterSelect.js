@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function FilterSelect(props) {
     return (
         <label htmlFor="filterReminders">Show tasks due:
@@ -9,6 +11,17 @@ function FilterSelect(props) {
             </select>
         </label>
     );
+}
+
+// Props Type Checking
+FilterSelect.propTypes = {
+    selectedFilter: PropTypes.string,
+    setSelectedFilter: PropTypes.func
+}
+
+// Setting Default Props
+FilterSelect.defaultProps = {
+    selectedFilter: 'all'
 }
 
 export default FilterSelect;

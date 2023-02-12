@@ -21,9 +21,11 @@ RemindersList.propTypes = {
     reminders: PropTypes.array
 }
 
+// Props Type Checking
 const date = new Date();
-const formattedDate = date.toISOString.substring(0, 10);
+const formattedDate = date.toISOString().substring(0, 10);
 
+// Setting Default Props
 RemindersList.defaultProps = {
     reminders: [{
         reminderText: "No Reminders Yet",
