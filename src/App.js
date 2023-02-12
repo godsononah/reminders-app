@@ -1,16 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Welcome from './Welcome';
+import InputForm from './InputForm';
+import FilterSelect from './FilterSelect';
+import RemindersList from './RemindersList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Welcome />
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <InputForm />
+            <FilterSelect />
+            <RemindersList />
+        </div>
+    );
 }
 
 export default App;
