@@ -3,6 +3,8 @@ import InputForm from './InputForm';
 import FilterSelect from './FilterSelect';
 import RemindersList from './RemindersList';
 import TestForm from './TestForm';
+import RenderCounter from './RenderCounter';
+import Crypto from './Crypto';
 
 function App() {
     const [reminders, setReminders] = useState();
@@ -65,11 +67,12 @@ function App() {
                        addNewReminder={addNewReminder} />
             <FilterSelect selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
             <RemindersList reminders={filteredList} setIsComplete={setIsComplete} />
-            <br />
-            <br />
-            <hr />
-            <br />
+            <br /><br /><hr /><br /><br />
             <TestForm />
+            <br /><br /><hr /><br /><br />
+            <RenderCounter />
+            <br /><br /><hr /><br />
+            <Crypto />
         </div>
     );
 }
