@@ -12,7 +12,10 @@ class TestFormInput extends Component {
 
     render() {
         return (
-            <input onChange={this.props.handleEmailChange} value={this.props.emailAddress} type="text" name="emailAddress" ref={this.textView} />
+            <input onChange={this.props.handleEmailChange}
+                   value={this.props.emailAddress}
+                   type="text" name="emailAddress"
+                   ref={this.textView} />
         )
     }
 }
